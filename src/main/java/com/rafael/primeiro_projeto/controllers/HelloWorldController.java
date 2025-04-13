@@ -13,6 +13,9 @@ public class HelloWorldController {
     @Autowired
     private HelloWorldService helloWorldService;
 
+//    @Autowired
+//    private AmazonS3 amazonS3;
+
     @GetMapping
     public String helloWorld() {
         return helloWorldService.helloWorld("Rafael");
